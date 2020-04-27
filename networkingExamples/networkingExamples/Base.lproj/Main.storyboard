@@ -30,11 +30,13 @@
                                     <segue destination="D8f-ZM-Yrw" kind="show" id="Gwf-AJ-5ug"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buz-kf-AYe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buz-kf-AYe">
                                 <rect key="frame" x="94" y="214" width="226" height="55"/>
                                 <color key="backgroundColor" red="0.44211308919999998" green="0.32447898149999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="4pD-13-XAa"/>
                                     <constraint firstAttribute="width" constant="226" id="55N-Er-nKc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="Di0-aT-ctt"/>
                                     <constraint firstAttribute="height" constant="55" id="ha1-Up-i4E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -45,11 +47,13 @@
                                     <segue destination="f1K-Ie-9ok" kind="show" id="szr-iv-LGe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJc-Wu-XeC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJc-Wu-XeC">
                                 <rect key="frame" x="94" y="300" width="226" height="55"/>
                                 <color key="backgroundColor" red="0.44211308919999998" green="0.32447898149999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="3Gy-t3-jOR"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="8nS-nB-Q6D"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="SlP-rB-XPO"/>
                                     <constraint firstAttribute="width" constant="226" id="mo7-d0-dqt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -63,7 +67,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="buz-kf-AYe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="47h-cL-6Hv"/>
+                            <constraint firstItem="aJc-Wu-XeC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Eku-W7-P3l"/>
                             <constraint firstItem="GiL-du-EAK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GR1-Gb-jVC"/>
+                            <constraint firstItem="buz-kf-AYe" firstAttribute="top" secondItem="GiL-du-EAK" secondAttribute="bottom" constant="27" id="Kh7-B3-Mgb"/>
+                            <constraint firstItem="aJc-Wu-XeC" firstAttribute="top" secondItem="buz-kf-AYe" secondAttribute="bottom" constant="31" id="dyO-gV-viC"/>
                             <constraint firstItem="GiL-du-EAK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="jth-r2-hnQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -81,14 +89,52 @@
                     <view key="view" contentMode="scaleToFill" id="VUd-yx-mFm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to download posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gw-se-NZI">
+                                <rect key="frame" x="20" y="268" width="374" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Awo-xC-KwD"/>
+                                    <constraint firstAttribute="width" constant="374" id="KZ9-bw-NQQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLc-NH-Ko5">
+                                <rect key="frame" x="71.5" y="385" width="271" height="67"/>
+                                <color key="backgroundColor" red="0.54552445270000005" green="0.55246902090000005" blue="0.59364030909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="2k0-1h-N06"/>
+                                    <constraint firstAttribute="width" constant="271" id="blm-FY-A12"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="67" id="e8V-fg-1cH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="271" id="wus-HD-QM5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="DownLoadPosts">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DownloadPostbutton:" destination="D8f-ZM-Yrw" eventType="touchUpInside" id="39f-Zv-7mG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Gw-se-NZI" firstAttribute="centerX" secondItem="YCg-Sy-5KT" secondAttribute="centerX" id="35U-Dm-tTc"/>
+                            <constraint firstItem="ZLc-NH-Ko5" firstAttribute="centerX" secondItem="YCg-Sy-5KT" secondAttribute="centerX" id="Fm9-3Z-Vdi"/>
+                            <constraint firstItem="ZLc-NH-Ko5" firstAttribute="top" secondItem="6Gw-se-NZI" secondAttribute="bottom" constant="71" id="tIf-VD-nCm"/>
+                            <constraint firstItem="6Gw-se-NZI" firstAttribute="top" secondItem="YCg-Sy-5KT" secondAttribute="top" constant="180" id="tbR-3Z-ls1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YCg-Sy-5KT"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Gk-aC-Idw"/>
+                    <connections>
+                        <outlet property="textlabel" destination="6Gw-se-NZI" id="rTW-DS-eaw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rN-V5-ZTP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="907"/>
+            <point key="canvasLocation" x="273.91304347826087" y="906.69642857142856"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="I9p-gV-TMh">

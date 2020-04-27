@@ -9,6 +9,10 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet weak var textlabel: UILabel!
+    
+    var dataTask: URLSessionDataTask?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +20,37 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func DownloadPostbutton(_ sender: UIButton) {
+        
+        let stringURL = "https://jsonplaceholder.typicode.com/posts"
+        if let url = URL(string: stringURL) {
+            dataTask = URLSession.shared.dataTask(with: url) { (data, responce, error) in
+                
+                if error != nil {
+                    print("error in request")
+                }else{
+                    if let resp = responce as? HTTPURLResponse , resp.statusCode == 200 ,let responcedata = data {
+                        //print(resp.statusCode)
+                        print(Thread.current)
+                       //print(resp)
+                        //print(responcedata)//обьем загруженных данных
+                        let posts = try? JSONDecoder().decode([Post].self, from: responcedata)
+                         print(posts)
+                        DispatchQueue.main.async {
+                            self.textlabel.text =  "post has been downloaded"
+                       }
+                        
+                       
+                    }
+                }
+            }
+            dataTask?.resume()
+            
+            
+            
+            
+        }
+        
     }
-    */
-
+    
 }
