@@ -18,6 +18,7 @@
 		A3252D742455C80500A386AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3252D732455C80500A386AC /* SecondViewController.swift */; };
 		A3252D762455C81800A386AC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3252D752455C81800A386AC /* ThirdViewController.swift */; };
 		A3294CF724573C6700FB550D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3294CF624573C6700FB550D /* Post.swift */; };
+		A32B8863245814EC00E5FF46 /* NetworkManagerFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A3252D732455C80500A386AC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A3252D752455C81800A386AC /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A3294CF624573C6700FB550D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerFirst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				A3252D592455BFD600A386AC /* AppDelegate.swift */,
 				A3252D5B2455BFD600A386AC /* SceneDelegate.swift */,
+				A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */,
 				A3294CF524573C2200FB550D /*  Models */,
 				A3252D722455C74700A386AC /* Controllers */,
 				A3252D5F2455BFD600A386AC /* Main.storyboard */,
@@ -169,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32B8863245814EC00E5FF46 /* NetworkManagerFirst.swift in Sources */,
 				A3252D742455C80500A386AC /* SecondViewController.swift in Sources */,
 				A3252D712455C74300A386AC /* FirstViewController.swift in Sources */,
 				A3252D5E2455BFD600A386AC /* ViewController.swift in Sources */,
