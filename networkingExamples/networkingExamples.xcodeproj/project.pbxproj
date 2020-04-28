@@ -19,6 +19,8 @@
 		A3252D762455C81800A386AC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3252D752455C81800A386AC /* ThirdViewController.swift */; };
 		A3294CF724573C6700FB550D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3294CF624573C6700FB550D /* Post.swift */; };
 		A32B8863245814EC00E5FF46 /* NetworkManagerFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */; };
+		A32B886724581E5900E5FF46 /* FirstPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B886524581E5900E5FF46 /* FirstPostCell.swift */; };
+		A32B886824581E5900E5FF46 /* FirstPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32B886624581E5900E5FF46 /* FirstPostCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		A3252D752455C81800A386AC /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A3294CF624573C6700FB550D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerFirst.swift; sourceTree = "<group>"; };
+		A32B886524581E5900E5FF46 /* FirstPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPostCell.swift; sourceTree = "<group>"; };
+		A32B886624581E5900E5FF46 /* FirstPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstPostCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				A3252D592455BFD600A386AC /* AppDelegate.swift */,
 				A3252D5B2455BFD600A386AC /* SceneDelegate.swift */,
 				A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */,
+				A32B886424581E1C00E5FF46 /* Cells */,
 				A3294CF524573C2200FB550D /*  Models */,
 				A3252D722455C74700A386AC /* Controllers */,
 				A3252D5F2455BFD600A386AC /* Main.storyboard */,
@@ -99,6 +104,15 @@
 				A3294CF624573C6700FB550D /* Post.swift */,
 			);
 			path = " Models";
+			sourceTree = "<group>";
+		};
+		A32B886424581E1C00E5FF46 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A32B886524581E5900E5FF46 /* FirstPostCell.swift */,
+				A32B886624581E5900E5FF46 /* FirstPostCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32B886824581E5900E5FF46 /* FirstPostCell.xib in Resources */,
 				A3252D692455BFD900A386AC /* LaunchScreen.storyboard in Resources */,
 				A3252D662455BFD900A386AC /* Assets.xcassets in Resources */,
 				A3252D612455BFD600A386AC /* Main.storyboard in Resources */,
@@ -174,6 +189,7 @@
 			files = (
 				A32B8863245814EC00E5FF46 /* NetworkManagerFirst.swift in Sources */,
 				A3252D742455C80500A386AC /* SecondViewController.swift in Sources */,
+				A32B886724581E5900E5FF46 /* FirstPostCell.swift in Sources */,
 				A3252D712455C74300A386AC /* FirstViewController.swift in Sources */,
 				A3252D5E2455BFD600A386AC /* ViewController.swift in Sources */,
 				A3252D762455C81800A386AC /* ThirdViewController.swift in Sources */,

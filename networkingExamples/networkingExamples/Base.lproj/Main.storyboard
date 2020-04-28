@@ -91,23 +91,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to download posts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gw-se-NZI">
-                                <rect key="frame" x="20" y="268" width="374" height="46"/>
+                                <rect key="frame" x="20" y="101" width="374" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="Awo-xC-KwD"/>
-                                    <constraint firstAttribute="width" constant="374" id="KZ9-bw-NQQ"/>
+                                    <constraint firstAttribute="height" constant="37" id="Oqs-AT-JXw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLc-NH-Ko5">
-                                <rect key="frame" x="71.5" y="385" width="271" height="67"/>
+                                <rect key="frame" x="80.5" y="154" width="253" height="31"/>
                                 <color key="backgroundColor" red="0.54552445270000005" green="0.55246902090000005" blue="0.59364030909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="2k0-1h-N06"/>
-                                    <constraint firstAttribute="width" constant="271" id="blm-FY-A12"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="67" id="e8V-fg-1cH"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="271" id="wus-HD-QM5"/>
+                                    <constraint firstAttribute="width" constant="253" id="sS6-qY-WeX"/>
+                                    <constraint firstAttribute="height" constant="31" id="zSC-Ca-w0k"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="DownLoadPosts">
@@ -117,18 +114,28 @@
                                     <action selector="DownloadPostbutton:" destination="D8f-ZM-Yrw" eventType="touchUpInside" id="39f-Zv-7mG"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qr0-im-eDC">
+                                <rect key="frame" x="0.0" y="209" width="414" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Gw-se-NZI" firstAttribute="centerX" secondItem="YCg-Sy-5KT" secondAttribute="centerX" id="35U-Dm-tTc"/>
-                            <constraint firstItem="ZLc-NH-Ko5" firstAttribute="centerX" secondItem="YCg-Sy-5KT" secondAttribute="centerX" id="Fm9-3Z-Vdi"/>
-                            <constraint firstItem="ZLc-NH-Ko5" firstAttribute="top" secondItem="6Gw-se-NZI" secondAttribute="bottom" constant="71" id="tIf-VD-nCm"/>
-                            <constraint firstItem="6Gw-se-NZI" firstAttribute="top" secondItem="YCg-Sy-5KT" secondAttribute="top" constant="180" id="tbR-3Z-ls1"/>
+                            <constraint firstItem="ZLc-NH-Ko5" firstAttribute="centerX" secondItem="YCg-Sy-5KT" secondAttribute="centerX" id="4yj-Bp-crG"/>
+                            <constraint firstItem="ZLc-NH-Ko5" firstAttribute="top" secondItem="6Gw-se-NZI" secondAttribute="bottom" constant="16" id="8mv-xk-i7B"/>
+                            <constraint firstItem="qr0-im-eDC" firstAttribute="leading" secondItem="YCg-Sy-5KT" secondAttribute="leading" id="Ch1-82-rYL"/>
+                            <constraint firstItem="qr0-im-eDC" firstAttribute="trailing" secondItem="YCg-Sy-5KT" secondAttribute="trailing" id="E3j-cC-btq"/>
+                            <constraint firstItem="qr0-im-eDC" firstAttribute="top" secondItem="ZLc-NH-Ko5" secondAttribute="bottom" constant="24" id="GuM-bh-8lS"/>
+                            <constraint firstAttribute="bottom" secondItem="qr0-im-eDC" secondAttribute="bottom" constant="20" id="Yls-kf-rHP"/>
+                            <constraint firstItem="6Gw-se-NZI" firstAttribute="leading" secondItem="YCg-Sy-5KT" secondAttribute="leading" constant="20" id="fIJ-9z-6nY"/>
+                            <constraint firstItem="YCg-Sy-5KT" firstAttribute="trailing" secondItem="6Gw-se-NZI" secondAttribute="trailing" constant="20" id="feJ-iw-Erd"/>
+                            <constraint firstItem="6Gw-se-NZI" firstAttribute="top" secondItem="YCg-Sy-5KT" secondAttribute="top" constant="13" id="qxa-eQ-jNQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YCg-Sy-5KT"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Gk-aC-Idw"/>
                     <connections>
+                        <outlet property="tableview" destination="qr0-im-eDC" id="4T8-sz-qXR"/>
                         <outlet property="textlabel" destination="6Gw-se-NZI" id="rTW-DS-eaw"/>
                     </connections>
                 </viewController>
