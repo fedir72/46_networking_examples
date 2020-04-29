@@ -13,4 +13,11 @@ class Post: Codable {
     var id: Int
     var title: String
     var body: String
+    
+    init(userId: Int,title: String,body: String) {
+        self.userId = userId
+        self.body = body
+        self.title = title
+        self.id = 0
+    }
 }

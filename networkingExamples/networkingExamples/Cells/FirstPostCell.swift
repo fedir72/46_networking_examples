@@ -16,15 +16,18 @@ class FirstPostCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.layer.cornerRadius = 10
+        
+    }
+    
+    func conFigureCell(_ post: Post){
+        
         titleLabel.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         titleLabel.textColor = .white
+        titleLabel.text = post.title
+        bodyView.text = post.body 
+        bodyView.textColor = .red
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  
     
 }
