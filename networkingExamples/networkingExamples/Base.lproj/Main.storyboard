@@ -195,23 +195,97 @@
                                 </constraints>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SDz-UY-y1n">
+                                <rect key="frame" x="20" y="472" width="374" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="rml-LK-h5g"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6P5-bf-13a">
+                                <rect key="frame" x="20" y="152" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DpD-bs-PDR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="26"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c1-RP-rab">
+                                <rect key="frame" x="20" y="202" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yi0-n7-vm3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdS-Pd-3Ms">
+                                <rect key="frame" x="20" y="252" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g1P-nl-3Gh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSM-T5-Q9W">
+                                <rect key="frame" x="20" y="302" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tbr-t7-gQO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y8L-HN-CEJ">
+                                <rect key="frame" x="158" y="354" width="98" height="97"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="TgV-wo-QRL"/>
+                                    <constraint firstAttribute="width" constant="98" id="hNJ-mb-G23"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.82906503520171282" green="1" blue="0.71403892638225719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DCz-ik-X8X" firstAttribute="trailing" secondItem="6P5-bf-13a" secondAttribute="trailing" constant="20" id="0ly-73-oSz"/>
+                            <constraint firstItem="6P5-bf-13a" firstAttribute="top" secondItem="4wA-1s-cEU" secondAttribute="bottom" constant="20" id="3RL-Ap-5dl"/>
+                            <constraint firstItem="DCz-ik-X8X" firstAttribute="trailing" secondItem="SDz-UY-y1n" secondAttribute="trailing" constant="20" id="6DO-cI-yTB"/>
+                            <constraint firstItem="Y8L-HN-CEJ" firstAttribute="top" secondItem="NSM-T5-Q9W" secondAttribute="bottom" constant="22" id="6SU-LS-i2S"/>
+                            <constraint firstItem="DCz-ik-X8X" firstAttribute="trailing" secondItem="7c1-RP-rab" secondAttribute="trailing" constant="20" id="6xe-5t-moF"/>
+                            <constraint firstItem="SDz-UY-y1n" firstAttribute="bottom" secondItem="DCz-ik-X8X" secondAttribute="bottom" id="9cI-8H-GdZ"/>
+                            <constraint firstItem="7c1-RP-rab" firstAttribute="leading" secondItem="DCz-ik-X8X" secondAttribute="leading" constant="20" id="Dq3-4Z-s67"/>
                             <constraint firstItem="4wA-1s-cEU" firstAttribute="leading" secondItem="DCz-ik-X8X" secondAttribute="leading" id="GDf-XK-e4J"/>
                             <constraint firstItem="4wA-1s-cEU" firstAttribute="trailing" secondItem="DCz-ik-X8X" secondAttribute="trailing" id="JcY-a4-PqW"/>
+                            <constraint firstItem="DCz-ik-X8X" firstAttribute="trailing" secondItem="hdS-Pd-3Ms" secondAttribute="trailing" constant="20" id="Jff-zg-OOv"/>
+                            <constraint firstItem="hdS-Pd-3Ms" firstAttribute="leading" secondItem="DCz-ik-X8X" secondAttribute="leading" constant="20" id="M2p-U1-e9O"/>
+                            <constraint firstItem="NSM-T5-Q9W" firstAttribute="top" secondItem="hdS-Pd-3Ms" secondAttribute="bottom" constant="20" id="PZ7-uM-U6f"/>
+                            <constraint firstItem="SDz-UY-y1n" firstAttribute="leading" secondItem="DCz-ik-X8X" secondAttribute="leading" constant="20" id="SHv-a8-z4u"/>
                             <constraint firstItem="4wA-1s-cEU" firstAttribute="top" secondItem="DCz-ik-X8X" secondAttribute="top" id="Tum-Kt-0db"/>
+                            <constraint firstItem="Y8L-HN-CEJ" firstAttribute="centerX" secondItem="DCz-ik-X8X" secondAttribute="centerX" id="ZM5-PY-TgK"/>
+                            <constraint firstItem="NSM-T5-Q9W" firstAttribute="leading" secondItem="DCz-ik-X8X" secondAttribute="leading" constant="20" id="kp8-BW-K9i"/>
+                            <constraint firstItem="DCz-ik-X8X" firstAttribute="trailing" secondItem="NSM-T5-Q9W" secondAttribute="trailing" constant="20" id="lqM-4t-2eA"/>
+                            <constraint firstItem="6P5-bf-13a" firstAttribute="leading" secondItem="DCz-ik-X8X" secondAttribute="leading" constant="20" id="mUb-6M-AQf"/>
+                            <constraint firstItem="7c1-RP-rab" firstAttribute="top" secondItem="6P5-bf-13a" secondAttribute="bottom" constant="20" id="mwi-56-VK3"/>
+                            <constraint firstItem="SDz-UY-y1n" firstAttribute="top" secondItem="Y8L-HN-CEJ" secondAttribute="bottom" constant="21" id="nUb-dt-0wy"/>
+                            <constraint firstItem="hdS-Pd-3Ms" firstAttribute="top" secondItem="7c1-RP-rab" secondAttribute="bottom" constant="20" id="tAC-9j-2YX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DCz-ik-X8X"/>
                     </view>
                     <navigationItem key="navigationItem" id="bg9-Ba-usc"/>
                     <connections>
+                        <outlet property="countryLabel" destination="NSM-T5-Q9W" id="8Ny-2l-ptH"/>
+                        <outlet property="localTimeLabel" destination="hdS-Pd-3Ms" id="8su-Wg-aBk"/>
+                        <outlet property="mapView" destination="SDz-UY-y1n" id="zde-bV-rlG"/>
+                        <outlet property="nameLabel" destination="6P5-bf-13a" id="KoA-Ae-TkL"/>
                         <outlet property="searchBar" destination="4wA-1s-cEU" id="sPr-Jz-Qia"/>
+                        <outlet property="tempCelsiuslabel" destination="7c1-RP-rab" id="eSf-DU-pKo"/>
+                        <outlet property="weaterIconLabel" destination="Y8L-HN-CEJ" id="2vc-qM-omp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2N-NK-4iK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="907"/>
+            <point key="canvasLocation" x="960.86956521739137" y="906.69642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fcl-g2-lHY">
