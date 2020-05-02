@@ -74,10 +74,10 @@
 			children = (
 				A3252D592455BFD600A386AC /* AppDelegate.swift */,
 				A3252D5B2455BFD600A386AC /* SceneDelegate.swift */,
-				A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */,
-				A32B886424581E1C00E5FF46 /* Cells */,
-				A3294CF524573C2200FB550D /*  Models */,
-				A3252D722455C74700A386AC /* Controllers */,
+				A3252D5D2455BFD600A386AC /* ViewController.swift */,
+				A32B886424581E1C00E5FF46 /* FirsExample */,
+				A32C4EE4245D7876001FA3B8 /* SecondExample */,
+				A32C4EE5245D78AB001FA3B8 /* ThirdExample */,
 				A3252D5F2455BFD600A386AC /* Main.storyboard */,
 				A3252D652455BFD900A386AC /* Assets.xcassets */,
 				A3252D672455BFD900A386AC /* LaunchScreen.storyboard */,
@@ -87,32 +87,32 @@
 			path = networkingExamples;
 			sourceTree = "<group>";
 		};
-		A3252D722455C74700A386AC /* Controllers */ = {
+		A32B886424581E1C00E5FF46 /* FirsExample */ = {
 			isa = PBXGroup;
 			children = (
-				A3252D5D2455BFD600A386AC /* ViewController.swift */,
 				A3252D702455C74300A386AC /* FirstViewController.swift */,
-				A3252D732455C80500A386AC /* SecondViewController.swift */,
-				A3252D752455C81800A386AC /* ThirdViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A3294CF524573C2200FB550D /*  Models */ = {
-			isa = PBXGroup;
-			children = (
-				A3294CF624573C6700FB550D /* Post.swift */,
-			);
-			path = " Models";
-			sourceTree = "<group>";
-		};
-		A32B886424581E1C00E5FF46 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
+				A32B8862245814EC00E5FF46 /* NetworkManagerFirst.swift */,
 				A32B886524581E5900E5FF46 /* FirstPostCell.swift */,
 				A32B886624581E5900E5FF46 /* FirstPostCell.xib */,
+				A3294CF624573C6700FB550D /* Post.swift */,
 			);
-			path = Cells;
+			path = FirsExample;
+			sourceTree = "<group>";
+		};
+		A32C4EE4245D7876001FA3B8 /* SecondExample */ = {
+			isa = PBXGroup;
+			children = (
+				A3252D732455C80500A386AC /* SecondViewController.swift */,
+			);
+			path = SecondExample;
+			sourceTree = "<group>";
+		};
+		A32C4EE5245D78AB001FA3B8 /* ThirdExample */ = {
+			isa = PBXGroup;
+			children = (
+				A3252D752455C81800A386AC /* ThirdViewController.swift */,
+			);
+			path = ThirdExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

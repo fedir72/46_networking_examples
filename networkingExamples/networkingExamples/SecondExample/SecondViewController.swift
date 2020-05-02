@@ -80,6 +80,7 @@ extension SecondViewController: UISearchBarDelegate {
                     if errorHasOccured {
                         //MARK: - сработает если значениe не найдено
                         self.nameLabel.text = "Локация не найдена"
+                        self.searchBar.text = ""
                     } else {
                 self.nameLabel.text = "City: " + (locationName!)
                 self.tempCelsiuslabel.text = "Temperature ℃: \(temperatureCelsius!)"

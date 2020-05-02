@@ -57,7 +57,7 @@
                                     <constraint firstAttribute="width" constant="226" id="mo7-d0-dqt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Button 3">
+                                <state key="normal" title=" openweathermap">
                                     <color key="titleColor" red="0.93346558550000003" green="0.93346558550000003" blue="0.93346558550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
