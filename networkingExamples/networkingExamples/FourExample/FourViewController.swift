@@ -13,10 +13,53 @@ class FourViewController: UIViewController {
     var searchcontroller = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var tableview: UITableView!
+
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-     setFortable()
+        
+      setFortable()
       setForSearchbar()
+     let  urlAplestr = "https://itunes.apple.com/search?term=jack+johnson&limit=25"
+        request(urlString: urlAplestr) { (searchResponce, error) in
+            searchResponce?.results.map { (track)  in
+                print(track.trackName)
+            }
+        }
+        
+    }
+    
+    //MARK: - функция загрузки данных
+    func request(urlString: String,completion: @escaping (SearchResponce?,Error?) -> Void) {
+          
+        guard let url = URL(string: urlString) else {return}
+        
+        URLSession.shared.dataTask(with: url) { (data, responce, error) in
+            DispatchQueue.main.async {
+                if let error = error {
+                     print("some error ")
+                    completion(nil,error)
+                   
+                    return
+                }
+                guard let data =  data else { return }
+                //MARK: - конвертация данных в строку
+                //let someString = String(data: data, encoding: .utf8)
+                //print(someString ?? "no data ")
+                
+                do {
+                let tracks = try JSONDecoder().decode(SearchResponce.self,from: data)
+                    completion(tracks,nil)
+                } catch let jsonError {
+                   print("Failed to decode JSOn",jsonError)
+                    completion(nil,error)
+                }
+            }
+        }.resume()
+        
+        
     }
     
     //MARK: - settings for table and searchbar

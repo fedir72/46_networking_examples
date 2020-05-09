@@ -24,6 +24,7 @@
 		A32C4EE7245D8EC1001FA3B8 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C4EE6245D8EC1001FA3B8 /* WeatherDataModel.swift */; };
 		A32C4EE9245DA4A8001FA3B8 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32C4EE8245DA4A8001FA3B8 /* DataSource.swift */; };
 		A3A88A952466C9FE0034A1F3 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A88A942466C9FE0034A1F3 /* FourViewController.swift */; };
+		A3A88A972466D8E60034A1F3 /* SearchResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A88A962466D8E60034A1F3 /* SearchResponce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A32C4EE6245D8EC1001FA3B8 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		A32C4EE8245DA4A8001FA3B8 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		A3A88A942466C9FE0034A1F3 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		A3A88A962466D8E60034A1F3 /* SearchResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A88A942466C9FE0034A1F3 /* FourViewController.swift */,
+				A3A88A962466D8E60034A1F3 /* SearchResponce.swift */,
 			);
 			path = FourExample;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				A3252D712455C74300A386AC /*  .swift in Sources */,
 				A3252D5E2455BFD600A386AC /* ViewController.swift in Sources */,
 				A3252D762455C81800A386AC /* ThirdViewController.swift in Sources */,
+				A3A88A972466D8E60034A1F3 /* SearchResponce.swift in Sources */,
 				A32C4EE9245DA4A8001FA3B8 /* DataSource.swift in Sources */,
 				A3294CF724573C6700FB550D /* Post.swift in Sources */,
 				A32C4EE7245D8EC1001FA3B8 /* WeatherDataModel.swift in Sources */,
