@@ -45,8 +45,8 @@ class NetworkManagerFirst {
                        }else{
                            if let resp = responce as? HTTPURLResponse , resp.statusCode == 200 ,let responcedata = data {
                                //print(resp.statusCode)
-                               print(Thread.current)
-                              //print(resp)
+                               //print(Thread.current)
+                                 //print(resp)
                                //print(responcedata)//обьем загруженных данных
                                let posts = try? JSONDecoder().decode([Post].self, from: responcedata)
                           completionHandler(posts ?? [])

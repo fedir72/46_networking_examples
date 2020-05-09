@@ -50,6 +50,7 @@ extension SecondViewController: UISearchBarDelegate {
         
         
         let strUrl = "http://api.weatherstack.com/current?access_key=bce1e689d3e7499371dd62da5b22794a&query=\(searchBar.text! .replacingOccurrences(of: " ", with:"%20"))"
+      
         let url = URL(string: strUrl)
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             
