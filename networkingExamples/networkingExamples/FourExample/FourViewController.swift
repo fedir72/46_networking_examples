@@ -23,16 +23,28 @@ class FourViewController: UIViewController {
       setFortable()
       setForSearchbar()
      let  urlAplestr = "https://itunes.apple.com/search?term=jack+johnson&limit=25"
-        request(urlString: urlAplestr) { (searchResponce, error) in
-            searchResponce?.results.map { (track)  in
-                print(track.trackName)
+//        request(urlString: urlAplestr) { (searchResponce, error) in
+//            searchResponce?.results.map { (track)  in
+//                print(track.trackName)
+//            }
+//        }
+        //MARK: - запрос с помощью класса резалт
+        request(urlString: urlAplestr) { (result) in
+            switch result {
+                
+            case .success(let searchresponce):
+                searchresponce.results.map{ (track) in
+                    print("track name: ", track.trackName)
+                }
+            case .failure(let error):
+                print("error", error)
             }
         }
         
     }
     
     //MARK: - функция загрузки данных
-    func request(urlString: String,completion: @escaping (SearchResponce?,Error?) -> Void) {
+    func request(urlString: String,completion: @escaping (Result <SearchResponce,Error>) -> Void) {
           
         guard let url = URL(string: urlString) else {return}
         
@@ -40,8 +52,8 @@ class FourViewController: UIViewController {
             DispatchQueue.main.async {
                 if let error = error {
                      print("some error ")
-                    completion(nil,error)
-                   
+                    //completion(nil,error)
+                    completion(.failure(error))
                     return
                 }
                 guard let data =  data else { return }
@@ -51,10 +63,12 @@ class FourViewController: UIViewController {
                 
                 do {
                 let tracks = try JSONDecoder().decode(SearchResponce.self,from: data)
-                    completion(tracks,nil)
+                    //completion(tracks,nil)
+                    completion(.success(tracks))
                 } catch let jsonError {
                    print("Failed to decode JSOn",jsonError)
-                    completion(nil,error)
+                    //completion(nil,error)
+                    completion(.failure(jsonError))
                 }
             }
         }.resume()
